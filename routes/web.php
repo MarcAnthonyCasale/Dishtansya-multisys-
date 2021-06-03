@@ -19,9 +19,10 @@ Route::get('/', function () {
 Route::get('/loginpage', function () {
     return view('auth.login');
 });
-Route::get('/orderpage', function () {
-    return view('order');
-});
+
+Route::get('/orderpage', 'App\Http\Controllers\Api\ProductsController@orderindex')->name('orderpage');
+
+
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
