@@ -20,4 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('register', 'App\Http\Controllers\Api\RegisterController@store');
 Route::post('login', 'App\Http\Controllers\Api\LoginController@vuelogin')->middleware("throttle:5,5");
 Route::post('loginpage', 'App\Http\Controllers\Api\LoginController@loginpage');
+Route::post('order', 'App\Http\Controllers\Api\ProductsController@order');
+
 

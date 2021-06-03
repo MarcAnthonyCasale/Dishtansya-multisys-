@@ -45,8 +45,10 @@
                     </svg>
                 </div>
                 <br>
-                <a href="/loginpage">Login Here </a>
-            
+                <div class="container">
+                    <a href="/loginpage">Login Here </a>
+                    <a style="float:right" href="/orderpage">Order Here </a>
+                </div>
             </div>
         </div>
     </body>
